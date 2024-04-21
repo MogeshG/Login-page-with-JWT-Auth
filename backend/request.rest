@@ -1,0 +1,30 @@
+GET http://127.0.0.1:3001/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibW9nZXNoIiwiaWF0IjoxNzEyMzIzMjMzLCJleHAiOjE3MTIzMjMyNTh9.X2UlsyBUO2RV0PDDhpVeoOCyJZRpJ80ijyiygjVXOmY
+
+###
+
+POST http://127.0.0.1:4000/login
+Content-Type: application/json
+
+{
+    "username": "mogesh" 
+}
+
+
+###
+POST http://127.0.0.1:3001/user
+Content-Type: application/json
+
+{
+    "username" : "test",
+    "password" : "1234"
+}
+
+###
+
+POST http://127.0.0.1:4000/login
+Content-Type: application/json
+
+{
+    "username" : "mogesh",
+}
